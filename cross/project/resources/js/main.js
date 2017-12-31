@@ -84,7 +84,7 @@ function clearAllClicked(){
 function checkClicked(){
 	for ( var i = 0; i < puzzelArrayData.length ; i++ ) {
 		var rowData = puzzelArrayData[i];
-		var yes=0;
+		var yes=1;
 		for(var j = 0 ; j < rowData.length ; j++){
 			if(rowData[j] != 0){
 				var selectedInputTextElement = document.getElementById('txt' + '_' + i + '_' + j);
@@ -97,14 +97,15 @@ function checkClicked(){
 					document.getElementById("kira").style.display = "none";
 					document.getElementById("videosms1").style.display = "none";
 					document.getElementById("videosms2").style.display = "none";
+					yes=0
 
 				}else{
-					yes=1
+					selectedInputTextElement.style.backgroundColor = 'white'
 				}
 			}
 		}
 		if (yes===1){
-			selectedInputTextElement.style.backgroundColor = 'white';
+			;
 			document.getElementById("greetings").src = "https://www.youtube.com/embed/h7tEeLCPFHE";
 			document.getElementById("kira").src = "https://www.youtube.com/embed/V5eTbBVlVRw";
 			document.getElementById("agentx").src="resources/img/unlk.png";
