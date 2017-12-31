@@ -48,14 +48,14 @@ p:nth-child(1) a {
 } */
 /*glow for webkit*/
 
-/* @-webkit-keyframes neon1 {
+@-webkit-keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #11a9ff, 0 0 70px #11a9ff, 0 0 80px #11a9ff, 0 0 100px #11a9ff, 0 0 150px #11a9ff;
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #11a9ff, 0 0 35px #11a9ff, 0 0 40px #11a9ff, 0 0 50px #11a9ff, 0 0 75px #11a9ff;
   }
-} */
+}
 
 #cross{
 	text-align: center;
@@ -104,8 +104,8 @@ td{
 	border: 1px solid black;
 }
 .inputBox{
-		width: 37px;
-		height:37px;
+		width: 38px;
+		height:38px;
 		border: 1px solid black;
 		text-align: center;
 }

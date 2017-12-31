@@ -19,11 +19,11 @@
   Remember to load the virtualenv:
   : source env/bin/activate
   and then just run app.py:
-  : ./web_shark/bottle_app.py
+  : ./pagecross/bottle_app.py
   Happy hacking!
 
 * License
-  Copyright (C) 2016 by Sitala Nicholas
+  Copyright (C) 2017 by Sitala Nicholas
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal:
