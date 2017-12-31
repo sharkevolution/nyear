@@ -93,8 +93,8 @@ td{
 	/* clear:left; */
 }
 .butt{
-	height:45px;
-	width: auto;
+	height:55px;
+	width: 100px;
 }
 #puzzel{
 	text-align: center;
@@ -104,8 +104,8 @@ td{
 	border: 1px solid black;
 }
 .inputBox{
-		width: 35px;
-		height:35px;
+		width: 37px;
+		height:37px;
 		border: 1px solid black;
 		text-align: center;
 }
