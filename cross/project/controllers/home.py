@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 import bottle
 from bottle import view, request, redirect
-from .mail import send_mail
+from cross.project.controllers import mail
 
 
 @bottle.route('/')
@@ -15,7 +15,7 @@ def do_admin():
     user_name = request.forms.get('name')
     user_text = request.forms.get('text')
 
-    send_mail('nsitala@gmail.com', 'nsitala@gmail.com', user_name, user_text)
+    mail.send_mail('nsitala@gmail.com', 'nsitala@gmail.com', user_name, user_text)
 
     redirect('/')
 
