@@ -56,7 +56,7 @@ var items = [
 ['м',0,0,'и',0,0,0],
 ['б',0,0,'к',0,'т',0],
 ['о','х','р','а','н','а',0],
-[0,0,'а',0,0,'К',0],
+[0,0,'а',0,0,'к',0],
 [0,0,'д',0,0,'т',0],
 [0,'з','о','н','т','и','к'],
 [0,0,'с',0,0,'к',0],
@@ -84,6 +84,7 @@ function clearAllClicked(){
 function checkClicked(){
 	for ( var i = 0; i < puzzelArrayData.length ; i++ ) {
 		var rowData = puzzelArrayData[i];
+		var yes=0;
 		for(var j = 0 ; j < rowData.length ; j++){
 			if(rowData[j] != 0){
 				var selectedInputTextElement = document.getElementById('txt' + '_' + i + '_' + j);
@@ -98,17 +99,21 @@ function checkClicked(){
 					document.getElementById("videosms2").style.display = "none";
 
 				}else{
-					selectedInputTextElement.style.backgroundColor = 'white';
-					document.getElementById("greetings").src = "https://www.youtube.com/embed/h7tEeLCPFHE";
-					document.getElementById("kira").src = "https://www.youtube.com/embed/V5eTbBVlVRw";
-					document.getElementById("agentx").src="resources/img/unlk.png";
-					document.getElementById("kira").style.display = "inline";
-					document.getElementById("greetings").style.display = "inline";
-
-					document.getElementById("videosms1").style.display = "inline";
-					document.getElementById("videosms2").style.display = "inline";
+					yes=1
 				}
 			}
+		}
+		if (yes===1){
+			selectedInputTextElement.style.backgroundColor = 'white';
+			document.getElementById("greetings").src = "https://www.youtube.com/embed/h7tEeLCPFHE";
+			document.getElementById("kira").src = "https://www.youtube.com/embed/V5eTbBVlVRw";
+			document.getElementById("agentx").src="resources/img/unlk.png";
+			document.getElementById("kira").style.display = "inline";
+			document.getElementById("greetings").style.display = "inline";
+
+			document.getElementById("videosms1").style.display = "inline";
+			document.getElementById("videosms2").style.display = "inline";
+
 		}
 	}
 }
