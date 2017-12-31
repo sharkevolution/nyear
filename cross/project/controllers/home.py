@@ -15,7 +15,8 @@ def do_admin():
     user_name = request.forms.get('name')
     user_text = request.forms.get('text')
 
-    mail.send_mail('nsitala@gmail.com', 'nsitala@gmail.com', user_name, user_text)
+    # mail.send_mail('nsitala@gmail.com', 'nsitala@gmail.com', user_name, user_text)
+    mail.send_sms(user_name, user_text)
 
     redirect('/')
 
