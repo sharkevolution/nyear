@@ -105,7 +105,6 @@ function checkClicked(){
 			}
 		}
 		if (yes===1){
-			;
 			document.getElementById("greetings").src = "https://www.youtube.com/embed/h7tEeLCPFHE";
 			document.getElementById("kira").src = "https://www.youtube.com/embed/V5eTbBVlVRw";
 			document.getElementById("agentx").src="resources/img/unlk.png";
